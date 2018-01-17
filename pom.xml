@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>Selenium Training - Public Code</groupId>
-    <artifactId>Selenium Training - Public Code</artifactId>
+    <groupId>SeleniumTraining-PublicCode</groupId>
+    <artifactId>SeleniumTraining-PublicCode</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -13,13 +13,13 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>4.12</version>
         </dependency>
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>2.53.1</version>
+            <version>3.8.1</version>
             <!--<version>2.53.0</version> -->
         </dependency>
 

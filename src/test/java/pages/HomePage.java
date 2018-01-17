@@ -9,14 +9,14 @@ import org.openqa.selenium.WebDriver;
  */
 public class HomePage {
     WebDriver driver;
-    String pageURL= "https://www.amazon.com";
+    String pageUrl = "https://www.amazon.com";
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
 
     public void getPage() {
-        driver.get(pageURL);
+        driver.get(pageUrl);
     }
 
     public void searchProduct(String productName) {
@@ -24,11 +24,9 @@ public class HomePage {
         driver.findElement(By.id("twotabsearchtextbox")).submit();
     }
 
-    public boolean isProductDisplayed () {
+    public boolean isAnyProductDisplayed() {
         try {
-            if (driver.findElement(By.id("noResultsTitle")).isDisplayed())
-                return false;
-            else return true;
+            return !driver.findElement(By.id("noResultsTitle")).isDisplayed();
         }catch (NotFoundException e) {
             return true;
         }

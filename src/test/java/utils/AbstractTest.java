@@ -5,22 +5,25 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by berkd on 27.11.2015.
  */
 public class AbstractTest {
-
-    public static WebDriver driver;
+    protected static WebDriver driver;
+	protected static Configuration configuration;
 
     @BeforeClass
-    public static void openWebsite(){
+    public static void openWebsite() {
+    	configuration = new Configuration();
+        System.setProperty("webdriver.gecko.driver",configuration.getGeckoDriverPath());
         driver = new FirefoxDriver();
-        driver.get("http://www.amazon.com");
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @AfterClass
     public static void closeWebsite(){
         driver.quit();
     }
-
 }

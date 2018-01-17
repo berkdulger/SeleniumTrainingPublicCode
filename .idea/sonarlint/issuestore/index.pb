@@ -1,0 +1,10 @@
+
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+7
+LICENSE,0\3\0398ccd0f49298b10a3d76a47800d2ebecd49859
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+A
+config.properties,5\b\5b4197fb87e6e5ff44afbf358a3bd23a35f56456
